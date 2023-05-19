@@ -1,0 +1,73 @@
+.btn {
+    min-width: 180px;
+    height: 56px;
+    line-height: 52px !important;
+    @include radius(4px 30px 4px 30px);
+    font: 20px $lr;
+    padding: 0 15px;
+}
+
+.btn-blue {
+    background: $blue;
+    color: $white;
+    box-shadow: 2px 2px 30px fade($blue, '33');
+    &:hover {
+        color: $white;
+        background: darken($blue, 4);
+    }
+    &.border {
+        background: $white;
+        border: 1px solid $blue !important;
+        color: $blue;
+        box-shadow: none;
+        &:hover {
+            background: fade($blue, '11');
+        }
+    }
+}
+
+.btn-white {
+    background: transparent;
+    color: $black;
+    border: 1px solid $gray;
+    &:hover {
+        background: fade($gray, '55');
+        border-color: darken($gray, 5);
+    }
+}
+
+.btn-orange {
+    border: 1px solid $orange;
+    color: $orange !important;
+    background: fade($orange, '11');
+    &:hover {
+        background: fade($orange, '15');
+    }
+}
+
+.google-btn {
+    @include flex-align-center;
+    padding: 0 25px;
+    i {
+        font-size: 21px;
+    }
+    span {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1600px) {
+    .btn {
+        min-width: 160px;
+        height: 51px;
+        line-height: 48px !important;
+        @include radius(4px 26px 4px 26px);
+        font: 18px Lexend-Regular;
+        padding: 0 13px;
+    }
+}

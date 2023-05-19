@@ -1,0 +1,435 @@
+.white-box {
+    @include radius(4px 30px 4px 30px);
+    box-shadow: 10px 20px 60px fade($blue, '15');
+    padding: 60px 100px;
+}
+
+.sec-title {
+    font: 40px $mm;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.text-field {
+    margin-bottom: 50px;
+    i {
+        position: absolute;
+        top: 31%;
+        right: 20px;
+        font-size: 27px;
+    }
+}
+
+.open-per {
+    @include size(208px, 50px);
+    min-width: unset !important;
+    line-height: 46px !important;
+    @include radius(4px 25px 4px 25px);
+    padding: 0;
+    span {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+    i {
+        @include rel-top(4px);
+    }
+}
+
+.tf-inner {
+    @include flex-sb;
+}
+
+.trip-foot {
+    margin-top: -50px;
+    padding-bottom: 100px;
+}
+
+.fsr-title {
+    @include flex-align-center;
+    margin-bottom: 50px;
+}
+
+.field-sec-row {
+    padding-top: 15px;
+}
+
+.fsrt-text {
+    font: 25px $mm;
+    margin-right: 15px;
+}
+
+.fsrt-hint {
+    font: 18px $mr;
+}
+
+.ioption-checkbox {
+    display: inline-block;
+    margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+    }
+    input {
+        display: none;
+        &:checked ~ .ioc-box {
+            border-color: fade($blue, '55');
+            span {
+                color: $black;
+            }
+            img {
+                filter: grayscale(0)
+            }
+        }
+    }
+}
+
+.ioc-box {
+    @include size(auto, 120px);
+    min-width: 120px;
+    @include flex-full-center;
+    flex-direction: column;
+    border: 3px solid transparent;
+    padding: 0 10px;
+    @include radius(6px 18px 6px 18px);
+    cursor: pointer;
+    @include no-select;
+    @include trans(0.2s);
+    img {
+        @include size(74px, 74px);
+        margin-bottom: 10px;
+        filter: grayscale(100%);
+        @include trans(0.2s);
+    }
+    span {
+        font: 18px $lm;
+        color: $softblack;
+        @include trans(0.2s);
+    }
+    &:hover {
+        border-color: lighten($silver, 4);
+        span {
+            color: $black
+        }
+    }
+}
+
+.daterangepicker {
+    width: 485px !important;
+    .drp-calendar {
+        width: 50% !important;
+    }
+    .drp-buttons {
+        width: 100% !important;
+    }
+    .btn {
+        @include radius(0);
+        width: 55px !important;
+        min-width: unset !important;
+        height: 28px;
+        padding: 0 !important;
+        line-height: 1 !important;
+    }
+    .btn-primary {
+        background: $blue;
+        border: none;
+        @include radius(3px 10px 3px 10px);
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.tf-select ~ .select2 {
+    width: 100% !important;
+    position: relative;
+    .select2-selection {
+        width: 100% !important;
+    }
+    .select2-selection--single {
+        width: 100%;
+        height: 64px;
+        @include radius(4px 30px 4px 30px);
+        border: 1px solid $blue;
+        font: 18px Lexend-Medium;
+        padding-left: 27px;
+    }
+    .select2-selection__rendered {
+        color: $black;
+        line-height: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .select2-selection__arrow {
+        top: 21px;
+        right: 20px;
+        font-size: 23px;
+        b {
+            display: none;
+        }
+        &::after {
+            content: "\e903";
+            font-family: "icomoon";
+            color: $blue;
+        }
+    }
+}
+
+.select2-container--open .select2-dropdown--below {
+    border-color: $black;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background: $blue;
+}
+
+.tfl-text {
+    display: block;
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 500px;
+}
+
+.centeral-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sim-single-filed {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.ct-titr {
+    font: 40px $mm;
+    margin-bottom: 20px;
+}
+
+.ct-desc {
+    font: 25px $mr
+}
+
+
+
+
+@media (max-width: 1730px) {
+    .range-picker {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1615px) {
+    .range-picker {
+        font-size: 13px;
+    }
+    .ioption-checkbox {
+        margin-right: 9px;
+    }
+    .ioc-box {
+        height: 92px;
+        min-width: 92px;
+        border-width: 2px;
+    }
+    .ioc-box span {
+        font-size: 13px;
+    }
+    .ioc-box img {
+        width: 53px;
+        height: 53px;
+    }
+}
+
+@media (max-width: 1375px) {
+    .fsrt-text {
+        font: 19px $mm;
+        margin-right: 13px;
+    }
+    .fsrt-hint {
+        font: 13px $mr;
+    }
+    .fsr-title {
+        margin-bottom: 34px;
+    }
+    .open-per {
+        width: 172px;
+        height: 39px;
+        line-height: 34px !important;
+        @include radius(4px 20px 4px 20px);
+    }
+    .open-per span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .ct-titr {
+        font: 30px $mm;
+        margin-bottom: 15px;
+    }
+    .ct-desc {
+        font: 17px $mr
+    }
+    .tfl-text {
+        font-size: 12px;
+    }
+    .text-field i {
+        top: 26%;
+        right: 16px;
+        font-size: 23px;
+    }
+    .sec-title {
+        font-size: 35px;
+        margin-bottom: 70px;
+    }
+    .range-picker {
+        font-size: 11px;
+    }
+    .tf-select ~ .select2 {
+        .select2-selection--single {
+            height: 50px;
+            @include radius(4px 25px 4px 25px);
+            font-size: 13px;
+        }
+        .select2-selection__arrow {
+            top: 15px;
+            right: 15px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 1550px) {
+    .white-box {
+        padding: 40px 80px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .range-picker {
+        font-size: 9px;
+    }
+    .white-box {
+        padding: 30px 50px;
+    }
+    .sec-title {
+        font-size: 30px;
+        margin-bottom: 57px;
+    }
+}
+
+@media (max-width: 991px) {
+    .tfl-text {
+        display: none;
+    }
+    .range-picker {
+        font-size: 13px;
+    }
+    .text-field {
+        margin-bottom: 38px;
+    }
+}
+
+@media (max-width: 767px) {
+    .range-picker {
+        font-size: 11px;
+    }
+    .white-box {
+        padding: 30px;
+    }
+    .sec-title {
+        font-size: 26px;
+    }
+    .fsr-title {
+        display: block;
+    }
+}
+
+@media (max-width: 575px) {
+    .ct-titr {
+        font: 20px $mm;
+    }
+    .ct-desc {
+        font: 12px $mr
+    }
+    .range-picker {
+        font-size: 14px;
+    }
+    .trip-foot {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        background: $white;
+        z-index: 500;
+        margin: 0;
+    }
+    .tfi-left {
+        display: none;
+    }
+    .tfi-right {
+        @include flex-sb;
+        width: 100%;
+        .btn {
+            width: 45%;
+        }
+    }
+    .open-per {
+        width: 39px;
+        height: 39px;
+        line-height: 30px;
+        @include radius(4px 13px 4px 13px);
+        
+        span {
+            display: none;
+        }
+        i {
+            top: 2px;
+        }
+    }
+    .iconic-options {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ioption-checkbox {
+        width: 33.33%;
+        margin: 0 0 4px 0;
+        input:checked ~ .ioc-box {
+            background: lighten($silver, 9);
+        }
+    }
+    .ioc-box {
+        border: 2px solid $white !important;
+    }
+}
+
+@media (max-width: 563px) {
+    .daterangepicker {
+        width: 249px !important;
+        .drp-buttons {
+            display: flex !important;
+            width: 100% !important;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .drp-selected {
+            margin-bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .sec-title {
+        font-size: 24px;
+    }
+    .white-box {
+        padding: 20px;
+    }
+    .ioption-checkbox {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+}

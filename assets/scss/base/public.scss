@@ -1,0 +1,88 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: ltr;
+    margin: 0;
+    font-family: $lr;
+    color: $black;
+}
+
+@media (max-width: 479px) {
+    .break-480 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+form {
+    display: block;
+    width: 100%;
+}
+
+.scrollbar-style {
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 100px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #CAD0D8; 
+        border-radius: 100px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #a1a7af; 
+    }
+}
+
+a {
+    color: $blue;
+}
+
+@media (min-width: 1366px) {
+    .container {
+        max-width: 100%;
+        padding: 0 70px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1920px;
+    }
+}
+
+.trip-content {
+    min-height: 90vh;
+    padding-top: 190px;
+    padding-bottom: 150px;
+}
+
+@media (max-width: 1500px) {
+    .trip-content {
+        padding-top: 160px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .trip-content {
+        padding-top: 130px;
+    }
+}
+
+@media (max-width: 991px) {
+    .trip-content {
+        padding-top: 70px;
+    }
+}

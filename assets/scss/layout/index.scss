@@ -1,0 +1,843 @@
+.index-first-sec {
+    position: relative;
+    @include size(100%, auto);
+    background: url('../img/airport.png') no-repeat;
+    background-size: cover;
+    @include radius(30px);
+    overflow: hidden;
+    padding-top: 30%;
+}
+
+.ifs-content {
+    @include fix-cover;
+    padding: 90px 0 0 60px;
+}
+
+.ifsi-title {
+    font: 40px $mb;
+    color: $black;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px fade($black, '66');
+}
+
+.ifsi-desc {
+    color: $orange;
+    font: 20px $mm;
+}
+
+.index-bottom-sec {
+    margin-top: -40px;
+}
+
+.ibs-box {
+    position: relative;
+    @include size(100%, 235px);
+    @include radius(4px 30px 4px 30px);
+    border: 1px solid $silver;
+    background: fade($white, '77');
+    @include backdrop(22px);
+    text-align: center;
+    padding: 37px 30px 0 30px;
+    margin: 0 auto;
+    max-width: 487px;
+    z-index: 1;
+}
+
+.icon-chevron {
+    display: inline-block;
+    &.right {
+        @include rotate(-90deg);
+    }
+}
+
+.ibsbi-title {
+    font: 20px $mb;
+    margin-bottom: 20px;
+}
+
+.ibsbi-desc {
+    font: 16px $lr;
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+.ibsbi-btn {
+    position: absolute;
+    bottom: -28px;
+    left: calc(50% - 25px);
+    @include size(50px !important, 50px !important);
+    @include flex-full-center;
+    min-width: unset !important;
+    @include radius(4px 20px 4px 20px !important);
+    margin: 0 auto;
+}
+
+.index-section {
+    position: relative;
+    height: 798px;
+}
+
+.index-help {
+    padding-top: 200px;
+}
+
+.convs-area {
+    position: absolute;
+    @include size(915px, 798px);
+    top: 0;
+    right: 0;
+    background: url('../img/index-sec-1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .obj {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.ca-woman {
+    background-image: url('../img/index-sec-3.png');
+    bottom: 0;
+    left: 50px;
+    @include size(284px, 400px);
+    &::after {
+        @include block-ba;
+        position: absolute;
+        bottom: 0;
+        left: -144px;
+        @include size(456px, 63px);
+        @include radius(100%);
+        background: #F4F4F4;
+        z-index: -1;
+    }
+}
+
+.ca-friends {
+    background-image: url('../img/index-sec-2.png');
+    bottom: 120px;
+    right: 150px;
+    @include size(248px, 400px);
+}
+
+.ca-message {
+    @include flex-full-center;
+    @include size(373px, 208px);
+    @include radius(100%);
+    color: $white;
+    text-align: center;
+    &::after {
+        @include block-ba;
+        position: absolute;
+        right: 50px;
+        bottom: 11px;
+        @include size(50px, 50px);
+        background: red;
+        @include rotate(15deg);
+    }
+    span {
+        position: relative;
+        z-index: 2;
+        font: 20px $lr;
+        line-height: 1.6;
+        @include scale(0.88);
+    }
+    &.white {
+        top: 77px;
+        right: 230px;
+        background: #dbe7eb;
+        color: $black;
+        &::after {
+            background: #dbe7eb;
+        }
+    }
+    &.orange {
+        left: -204px;
+        bottom: 363px;
+        background: $orange;
+        color: $white;
+        &::after {
+            background: $orange;
+        }
+    }
+}
+
+.issec-content {
+    padding-top: 90px;
+}
+
+.iscc-above {
+    display: block;
+    font: 30px $mm;
+    color: $orange
+}
+
+.iscc-title {
+    font: 70px $mb;
+    margin: 18px 0;
+}
+
+.iscc-desc {
+    font: 22px $lr;
+    max-width: 550px;
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.index-popular {
+    margin: 170px 0 170px 0;
+    padding: 0 30px;
+}
+
+.ipo-box {
+    position: relative;
+    @include size(100%, 516px);
+    border: 1px solid $silver;
+    @include radius(4px 30px 4px 30px);
+    padding: 40px 30px 0 30px;
+}
+
+.ipob-img {
+    height: 277px;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.ipob-text {
+    font-size: 18px;
+    color: $softblack;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 4;
+    line-clamp: 4; 
+   -webkit-box-orient: vertical;
+   line-height: 1.5;
+}
+
+.opob-btn-holder {
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.mid-sec-title {
+    text-align: center;
+    font: 50px $mb;
+    margin-bottom: 60px;
+}
+
+.tfo-top {
+    @include flex-sb;
+    padding-bottom: 30px;
+}
+
+.tfot-left, .tfot-right {
+    width: 100%;
+    max-width: 693px;
+}
+
+.tfot-title {
+    font: 40px $lb;
+    margin-bottom: 15px;
+}
+
+.tfot-desc {
+    font: 20px $lm;
+    color: #B8B8B8;
+    line-height: 1.6;
+}
+
+.newsletter {
+    position: relative;
+    input {
+        width: 100%;
+        height: 66px;
+        border: 1px solid $silver;
+        @include radius(4px 30px 4px 30px);
+        font-size: 20px;
+        padding-left: 25px;
+        &::placeholder {
+            color: #B8B8B8;
+        }
+        &:focus {
+            border-color: $blue;
+        }
+    }
+    .btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 56px;
+        line-height: 56px !important;
+    }
+}
+
+.nl-hint {
+    display: block;
+    font-size: 14px;
+    color: #B8B8B8;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.tfo-bottom {
+    padding: 50px 0;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.tfob-title {
+    font: 30px $mb;
+    margin-bottom: 17px;
+}
+
+.tfob-desc {
+    font: 20px $lm;
+    color: #707070;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.tfob-fm {
+    @include flex-sb;
+    font-size: 20px;
+    b {
+        font-family: $lb;
+    }
+    span {
+        font-family: $lm;
+        color: #707070;
+    }
+}
+
+.tfob-links-grid {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.tfobl-col {
+    width: auto;
+    padding-right: 96px;
+    ul {
+        li {
+            margin-bottom: 15px;
+            a {
+                color: #050A30;
+                font: 20px $lm;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+.tfob-content {
+    max-width: 693px;
+}
+
+.tfobl-titr {
+    font: 24px $lb;
+    margin-bottom: 20px;
+    color: $blue;
+}
+
+.tfo-copyright {
+    @include flex-sb;
+    margin-top: 30px;
+}
+
+.tfoc-text {
+    color: #707070;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.tfoc-social {
+    @include flex-align-center;
+    li {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            @include flex-full-center;
+            @include size(60px, 60px);
+            @include radius(100%);
+            background: $blue;
+            @include trans(0.2s);
+            i {
+                color: $white;
+                font-size: 26px;
+            }
+            &:hover {
+                background: $black;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 2050px) {
+    .convs-area {
+        position: relative;
+    }
+}
+
+@media (max-width: 1800px) {
+    .index-section {
+        height: 619px;
+    }
+    .index-help {
+        padding-top: 150px;
+    }
+    .ibs-box {
+        height: 258px;
+        max-width: 387px;
+    }
+    .convs-area {
+        @include size(710px, 619px);
+    }
+    .ca-woman {
+        @include size(237px, 333px);
+        &::after {
+            left: -116px;
+            width: 356px;
+            height: 52px;
+        }
+    }
+    .ca-friends {
+        @include size(218px, 351px);
+    }
+    .ca-message {
+        @include size(318px, 172px);
+        span {
+            font-size: 17px;
+        }
+        &.orange {
+            left: -195px;
+            bottom: 257px;
+        }
+        &.white {
+            top: -14px;
+            right: 217px;
+        }
+    }
+    .iscc-title {
+        font-size: 64px;
+    }
+    .iscc-above {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1730px) {
+    .tfobl-col {
+        padding-right: 65px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .tfob-links-grid {
+        justify-content: space-between;
+    }
+    .tfobl-col {
+        padding-right: 0;
+    }
+    .tfob-content {
+        max-width: 618px;
+    }
+    .tfot-left, .tfot-right {
+        max-width: 500px;
+    }
+    .tfot-title {
+        font: 36px Lexend-Bold;
+        margin-bottom: 14px;
+    }
+    .tfot-desc {
+        font: 18px Lexend-Medium;
+    }
+    .ipob-img {
+        height: 229px;
+    }
+    .ipob-text {
+        font-size: 16px;
+    }
+    .ipo-box {
+        height: 458px;
+        padding: 33px 23px 0 23px;
+    }
+    .index-section {
+        height: 444px;
+    }
+    .convs-area {
+        @include size(510px, 444px);
+    }
+    .ca-woman {
+        @include size(180px, 252px);
+        bottom: -42px;
+        left: 20px;
+        &::after {
+            left: -76px;
+            width: 266px;
+            height: 35px;
+        }
+    }
+    .ca-friends {
+        @include size(154px, 247px);
+        bottom: 55px;
+        right: 66px;
+    }
+    .ca-message {
+        width: 210px;
+        height: 126px;
+        &::after {
+            right: 28px;
+            bottom: 5px;
+        }
+        span {
+            font-size: 12px;
+        }
+        &.orange {
+            left: -123px;
+            bottom: 176px;
+        }
+        &.white {
+            top: 17px;
+            right: 124px;
+        }
+    }
+    .iscc-above {
+        font-size: 20px;
+    }
+    .iscc-title {
+        font-size: 53px;
+        margin: 13px 0;
+    }
+    .iscc-desc {
+        font: 16px Lexend-Regular;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .ibsbi-title {
+        font-size: 15px;
+    }
+    .ibsbi-desc {
+        font-size: 13px;
+    }
+    .ibs-box {
+        height: 219px;
+        padding: 35px 19px 0 19px;
+        max-width: 326px;
+    }
+    .ibsbi-btn {
+        position: absolute;
+        bottom: -22px;
+        left: calc(50% - 20px);
+        @include size(40px, 40px !important);
+        line-height: 40px !important;
+        @include radius(4px 15px 4px 15px !important);
+        min-width: 40px !important;
+    }
+}
+
+@media (max-width: 1366px) {
+    .tfoc-text {
+        font-size: 14px;
+    }
+    .tfoc-social {
+        li {
+            margin-right: 15px;
+            a {
+                @include size(40px, 40px);
+                i {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .tfob-links-grid {
+        justify-content: flex-end;
+    }
+    .tfobl-col {
+        padding-right: 60px;
+    }
+    .tfobl-titr {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+    .tfobl-col ul li a {
+        font-size: 14px;
+    }
+    .tfobl-col ul li {
+        margin-bottom: 5px;
+    }
+    .tfob-title {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+    .tfob-desc {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+    .tfob-fm {
+        font-size: 14px;
+    }
+    .tfob-content {
+        max-width: 469px;
+    }
+    .tfot-title {
+        font: 30px Lexend-Bold;
+    }
+    .tfot-desc {
+        font: 14px Lexend-Medium;
+    }
+    .newsletter {
+        input {
+            height: 49px;
+            font-size: 15px;
+            padding-left: 22px;
+        }
+        .btn {
+            width: 111px;
+            min-width: unset;
+            top: 4px;
+            right: 4px;
+            font-size: 14px;
+            height: 41px;
+            line-height: 40px !important;
+        }
+    }
+    .nl-hint {
+        font-size: 11px;
+    }
+    .tfot-left, .tfot-right {
+        max-width: 419px;
+    }
+    .index-popular {
+        margin: 123px 0 123px 0;
+    }
+    .mid-sec-title {
+        font-size: 36px;
+        margin-bottom: 54px;
+    }
+    .ifsi-title {
+        font-size: 33px;
+    }
+    .ifsi-desc {
+        font-size: 17px;
+    }
+    .ipob-img {
+        height: 190px;
+    }
+    .ipob-text {
+        font-size: 12px;
+    }
+    .ipo-box {
+        height: 369px;
+        padding: 23px 16px 0 16px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .tfob-content {
+        max-width: 424px;
+    }
+    .tfob-links-grid {
+        justify-content: space-between;
+    }
+    .tfobl-col {
+        padding-right: 0;
+    }
+    .index-popular {
+        padding: 0;
+    }
+    .ipob-img {
+        height: 145px;
+    }
+    .ipob-text {
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+    }
+    .ipo-box {
+        height: 321px;
+        padding: 19px 12px 0 12px;
+    }
+    .opob-btn-holder {
+        bottom: -19px;
+        .btn {
+            min-width: 125px;
+            height: 38px;
+            line-height: 37px !important;
+        }
+    }
+    .index-section {
+        height: 320px;
+    }
+    .index-help {
+        padding-top: 115px;
+    }
+    .convs-area {
+        @include size(368px, 320px);
+    }
+    .ca-woman {
+        @include size(130px, 182px);
+        bottom: -19px;
+        left: 37px;
+        &::after {
+            left: -51px;
+            width: 187px;
+            height: 22px;
+        }
+    }
+    .ca-friends {
+        @include size(98px, 157px);
+        bottom: 43px;
+        right: 49px;
+    }
+    .ca-message {
+        width: 188px;
+        height: 93px;
+        &::after {
+            right: 28px;
+            bottom: 5px;
+        }
+        span {
+            font-size: 10px;
+        }
+        &.orange {
+            left: -96px;
+            bottom: 144px;
+        }
+        &.white {
+            top: 31px;
+            right: 74px;
+        }
+    }
+    .issec-content {
+        padding-top: 27px;
+    }
+    .iscc-above {
+        font-size: 15px;
+    }
+    .iscc-title {
+        font-size: 33px;
+        margin: 10px 0;
+    }
+    .iscc-desc {
+        font: 14px Lexend-Regular;
+        width: 90%;
+    }
+}
+
+@media (max-width: 991px) {
+    .tfoc-text {
+        font-size: 11px;
+    }
+    .tfoc-social li {
+        margin-right: 7px;
+    }
+    .tfob-content {
+        max-width: 100%;
+    }
+    .tfob-links-grid {
+        margin-top: 50px;
+    }
+    .tfot-left, .tfot-right {
+        max-width: 100%;
+    }
+    .tfo-top {
+        display: block;
+    }
+    .tfot-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .index-popular {
+        margin: 59px 0 84px 0;
+    }
+    .ipo-box {
+        margin-bottom: 50px;
+    }
+    .index-section {
+        height: auto;
+        padding: 88px 0 150px 0;
+    }
+    .index-help {
+        padding-top: 0;
+    }
+    .issec-content {
+        text-align: center;
+        padding: 0;
+    }
+    .iscc-desc {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 28px auto;
+    }
+    .ibs-box {
+        max-width: 90%;
+        height: auto;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tfo-copyright {
+        flex-wrap: wrap;
+    }
+    .tfoc-social {
+        width: 100%;
+        order: 1;
+        justify-content: center;
+    }
+    .tfoc-text {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tfob-links-grid {
+        display: block;
+    }
+    .tfobl-col {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .tfot-title {
+        font-size: 26px;
+    }
+    .mid-sec-title {
+        font-size: 27px;
+    }
+    .ifs-inner {
+        padding-left: 30px;
+    }
+    .ifsi-title {
+        font-size: 26px;
+    }
+    .ifsi-desc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .ifs-inner {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}

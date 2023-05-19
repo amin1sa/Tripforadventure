@@ -1,0 +1,265 @@
+@media (max-width: 1600px) {
+    .ifs-content {
+        padding: 58px 0 0 44px;
+    }
+    .ibs-box {
+        height: 211px;
+        padding: 30px 25px 0 25px;
+    }
+    .ibsbi-title {
+        font-size: 18px;
+        margin-bottom: 17px;
+    }
+    .ibsbi-desc {
+        font-size: 14px;
+    }
+    .sec-title.for-recom.in-ex {
+        font-size: 31px;
+    }
+    .sec-top-desc {
+        font-size: 15px;
+    }
+    .cprsib-bottom .btn {
+        width: 113px;
+        min-width: 100%;
+        font-size: 14px;
+        height: 41px;
+        line-height: 40px !important;
+    }
+    .nbl-1 {
+        height: 40px;
+    }
+    .nbmi-link {
+        font-size: 18px;
+        &::after {
+            height: 6px;
+        }
+    }
+    .signup-btns .or {
+        margin: 0 29px;
+    }
+    .mid-sec-title {
+        font-size: 38px;
+    }
+    .btn {
+        min-width: 123px;
+        height: 39px;
+        line-height: 36px !important;
+        @include radius(4px 25px 4px 25px);
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .header-btn span {
+        font-size: 14px;
+    }
+    .google-btn {
+        padding: 0 16px;
+        span {
+            font-size: 12px;
+            margin-left: 12px;
+        }
+        i {
+            font-size: 19px;
+        }
+    }
+    .newsletter {
+        input {
+            font-size: 17px;
+            height: 55px;
+        }
+        .btn {
+            height: 46px;
+            line-height: 45px !important;
+        }
+    }
+    .nl-hint {
+        display: block;
+        font-size: 12px;
+    }
+    .tfot-title {
+        font-size: 32px;
+        margin-bottom: 13px;
+    }
+    .tfot-desc {
+        font-size: 15px;
+    }
+    .nbmi-link {
+        font-size: 14px;
+        &::after {
+            height: 4px;
+            bottom: -13px
+        }
+    }
+    .opob-btn-holder {
+        bottom: -18px;
+    }
+    .tfobl-titr {
+        font-size: 19px;
+    }
+    .tfobl-col ul li a {
+        font-size: 16px;
+    }
+    .tfob-title {
+        font-size: 25px;
+    }
+    .tfob-desc {
+        font-size: 17px;
+    }
+    .tfob-fm {
+        font-size: 17px;
+    }
+    .tfoc-social li a {
+        @include size(50px, 50px);
+        i {
+            font-size: 20px;
+        }
+    }
+    .tfoc-text {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 1366px) {
+    .ifsi-title {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .ifsi-desc {
+        font-size: 14px;
+    }
+    .ibsbi-desc {
+        font-size: 12px;
+    }
+    .ibs-box {
+        height: 184px;
+    }
+    .ibsbi-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .cprsib-bottom .btn {
+        width: 90px;
+        @include radius(4px 20px 4px 20px);
+    }
+    .tfoc-social li a {
+        width: 42px;
+        height: 42px;
+    }
+    .tfobl-titr {
+        font-size: 16px;
+    }
+    .tfobl-col ul li a {
+        font-size: 13px;
+    }
+    .tfob-title {
+        font-size: 24px;
+    }
+    .tfob-desc {
+        font-size: 14px;
+    }
+    .tfob-fm {
+        font-size: 14px;
+    }
+    .newsletter {
+        input {
+            font-size: 14px;
+            height: 49px;
+            @include radius(4px 20px 4px 20px);
+        }
+        .btn {
+            height: 41px;
+            line-height: 40px !important;
+            @include radius(4px 20px 4px 20px);
+        }        
+    }
+    .tfot-desc {
+        font-size: 14px;
+    }
+    .tfot-title {
+        font-size: 26px;
+        margin-bottom: 11px;
+    }
+    .nbl-1 {
+        height: 35px;
+    }
+    .btn {
+        min-width: 123px;
+        height: 39px;
+        line-height: 36px !important;
+        @include radius(4px 25px 4px 25px);
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .header-btn span {
+        font-size: 14px;
+    }
+    .google-btn {
+        padding: 0 16px;
+        span {
+            font-size: 12px;
+            margin-left: 12px;
+        }
+        i {
+            font-size: 19px;
+        }
+    }
+    .signup-btns .or {
+        font-size: 13px;
+        margin: 0 25px;
+    }
+    .chm-box {
+        width: 24px;
+        height: 24px;
+        min-width: 24px
+    }
+    .chm-txt {
+        font-size: 13px;
+    }
+    .sec-title {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .ibs-box {
+        height: 176px;
+        padding: 23px 16px 0 16px;
+    }
+    .ibsbi-title {
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+    .ibsbi-desc {
+        font-size: 12px;
+    }
+    .ifs-content {
+        padding: 35px 0 0 29px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ibs-box {
+        height: auto;
+        padding: 23px 16px 18px 16px;
+    }
+    .index-first-sec {
+        padding-top: 0;
+        height: 300px;
+    }
+    .ifs-inner {
+        padding: 0;
+    }
+    .ifsi-title {
+        font-size: 22px;
+    }
+    .ifsi-desc {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+    .ifs-content {
+        padding-left: 0;
+    }
+}
